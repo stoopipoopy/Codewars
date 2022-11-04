@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch bigNumbers",
+            "request": "launch",
+            "mainClass": "bigNumbers",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch hugeBook",
+            "request": "launch",
+            "mainClass": "hugeBook",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch bookPages",
+            "request": "launch",
+            "mainClass": "bookPages",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch StrayNumber",
+            "request": "launch",
+            "mainClass": "StrayNumber",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch determineFlush",
+            "request": "launch",
+            "mainClass": "determineFlush",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch letterboxes",
+            "request": "launch",
+            "mainClass": "letterboxes",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch oddInt",
+            "request": "launch",
+            "mainClass": "oddInt",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch oneTrickOneTaker",
+            "request": "launch",
+            "mainClass": "oneTrickOneTaker",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch permutations",
+            "request": "launch",
+            "mainClass": "permutations",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch splitIntoParts",
+            "request": "launch",
+            "mainClass": "splitIntoParts",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch stopSpiningMyWords",
+            "request": "launch",
+            "mainClass": "stopSpiningMyWords",
+            "projectName": "Codewars_1933e75d"
+        },
+        {
+            "type": "java",
+            "name": "Launch tenThousandthPrime",
+            "request": "launch",
+            "mainClass": "tenThousandthPrime",
+            "projectName": "Codewars_1933e75d"
+        }
+    ]
+}
