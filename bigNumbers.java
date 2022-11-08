@@ -30,16 +30,27 @@ public class bigNumbers {
           b = b.substring(0, b.length() - 15);
           System.out.println(b + betterB);
         } 
-
         // initialize variables
+        
         Long segment1A = new Long(a);
         Long segment1B = new Long(b);
-        
         Long segment2A = new Long(betterA);
         Long segment2B = new Long(betterB);
+        
+        if(!(betterA.equals("0") && betterB.equals("0"))){
+            if(!betterA.equals("0")){
+                segment1B = new Long(betterB);
+                segment1A = new Long(a);
+            } else if(!betterB.equals("0")){
+              segment1A = new Long(betterA);
+              segment1B = new Long(b);
+        
+            }
+        }
+        
 
         // check if the above calculation failed somehow
-        String stringA = segment1A.toString() + segment2A.toString();
+        String stringA = segment1A.toString() +  (segment2A.toString().equals("0") ? "" : segment2A.toString());
         String stringB = segment1B.toString() + (segment2B.toString().equals("0") ? "" : segment2B.toString());
         if(stringA.equals(startingA)){
           System.out.println("A parsed correctly");
@@ -47,7 +58,7 @@ public class bigNumbers {
         if(stringB.equals(startingB)){
           System.out.println("B parsed correctly");
         }
-        
+        System.out.println("String B: " + stringB);
         System.out.println("segment1A: " + segment1A + " segment1B: " + segment1B + " segment2A: " + segment2A + " segment2B: " + segment2B);
 
         /*
@@ -63,16 +74,11 @@ public class bigNumbers {
          * 
          * these segments account for positional notation when adding strings
          */
-        Long segment1 = new Long(
-           segment1B + segment1A
-                                       
-                    );
+        Long segment1 = new Long(segment1B + segment1A);
         
         
         
-        Long segment2 = new Long(
-          segment2B + segment2A
-        );
+        Long segment2 = new Long(segment2B + segment2A);
         
         
         System.out.println("seg1: " + segment1);
