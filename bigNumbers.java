@@ -133,7 +133,7 @@ public class Kata
           System.out.println("cringe");
           return (segment1.toString() + segment2.toString());
         }
-        
+         
       }
       public static void main(String[] args) {
         System.out.println(add("1", "1"));
