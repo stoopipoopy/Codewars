@@ -1,4 +1,5 @@
-public class bigNumbers {
+public class Kata
+{
     public static String add(String a, String b) {
          // i messed up somewhere in my calculation and i need these
         String startingA = a;
@@ -37,18 +38,21 @@ public class bigNumbers {
         Long segment1B = new Long(b);
         Long segment2A = new Long(betterA);
         Long segment2B = new Long(betterB);
-        
-        if(!(betterA.equals("0") && betterB.equals("0"))){
-            if(!betterA.equals("0")){
-                segment1B = new Long(betterB);
-                segment1A = new Long(a);
-            } else if(!betterB.equals("0")){
-              segment1A = new Long(betterA);
-              segment1B = new Long(b);
-        
-            }
+        System.out.println("initialized vars");
+         System.out.println("segment1A: " + segment1A + " segment1B: " + segment1B + " segment2A: " + segment2A + " segment2B: " + segment2B);
+        if(segment2A.equals(0L)){
+          System.out.println("segment 2 A is 0");
+          segment2A = new Long(a);
+          segment1A = new Long("0"); 
+          } 
+
+        if(segment2B.equals(0L)){
+          System.out.println("segment 2 B is 0");
+          segment2B = new Long(b);
+          segment1B = new Long("0");
         }
-        
+        System.out.println("finished purging");
+         System.out.println("segment1A: " + segment1A + " segment1B: " + segment1B + " segment2A: " + segment2A + " segment2B: " + segment2B);
 
         // check if the above calculation failed somehow
         String stringA = segment1A.toString() +  (segment2A.toString().equals("0") ? "" : segment2A.toString());
@@ -99,7 +103,9 @@ public class bigNumbers {
          * but we are adding strings so we get
          * 90124 and not 9124
          */
-        if(segment2.toString().length() > segment2A.toString().length()){
+         System.out.println(segment2);
+         System.out.println(segment2A);
+        if(segment2.toString().length() > segment2A.toString().length() || segment2.toString().Length() > segement2B.toString().Length()){
           segment1 += 1;
           segment2 = new Long(segment2.toString().substring(1));
         }
@@ -115,14 +121,20 @@ public class bigNumbers {
          * without check:
          * returns segment1 + segment2 (120)
          */
-        if(segment2.toString().equals("0")){
+
+         System.out.println(segment1);
+         System.out.println(segment2);
+        if(segment2.equals(0L)){
+          System.out.println("only segment 1");
           return segment1.toString();
-        }
-        // if segment 2 is not 0, return both segments combined
-        else{
+        } else if(segment1.equals(0L)){
+          System.out.println("only sergment 2");
+          return segment2.toString();
+        } else{
+          System.out.println("cringe");
           return (segment1.toString() + segment2.toString());
         }
-        
+         
       }
       public static void main(String[] args) {
         System.out.println(add("1", "1"));
