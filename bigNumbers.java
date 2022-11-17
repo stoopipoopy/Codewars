@@ -1,4 +1,4 @@
-public class Kata
+public class bigNumbers
 {
     public static String add(String a, String b) {
          // i messed up somewhere in my calculation and i need these
@@ -105,7 +105,7 @@ public class Kata
          */
          System.out.println(segment2);
          System.out.println(segment2A);
-        if(segment2.toString().length() > segment2A.toString().length() || segment2.toString().Length() > segement2B.toString().Length()){
+        if(segment2.toString().length() > segment2A.toString().length() || segment2.toString().length() > segment2B.toString().length()){
           segment1 += 1;
           segment2 = new Long(segment2.toString().substring(1));
         }
