@@ -16,6 +16,7 @@ public class bigNumbers {
          * change a & b to be the first 14 letters
          * betterA & betterB are the remaining letters
          */
+        
         String betterA = "0";
         if(a.length() > 20){
           betterA = a.substring(a.length() - 15, a.length());
