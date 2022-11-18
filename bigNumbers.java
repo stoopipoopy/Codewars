@@ -103,11 +103,18 @@ public class bigNumbers
          * but we are adding strings so we get
          * 90124 and not 9124
          */
+         System.out.println("checked for overlap");
          System.out.println(segment2);
          System.out.println(segment2A);
-        if(segment2.toString().length() > segment2A.toString().length() || segment2.toString().length() > segment2B.toString().length()){
+         System.out.println(segment2B);
+        if(segment2.toString().length() > segment2A.toString().length() && segment2.toString().length() > segment2B.toString().length()){
+            System.out.println("overlap");
+          System.out.println(segment2.toString().length() + " = " + segment2.toString());
+          System.out.println(segment2A.toString().length() + " = " + segment2A.toString());
+          System.out.println(segment2B.toString().length() + " = " + segment2B.toString());
           segment1 += 1;
           segment2 = new Long(segment2.toString().substring(1));
+          
         }
 
         /*
@@ -137,6 +144,7 @@ public class bigNumbers
          
       }
       public static void main(String[] args) {
+        /*
         System.out.println(add("1", "1"));
         System.out.println("\n");
         // should return 2
@@ -150,7 +158,13 @@ public class bigNumbers
         System.out.println(add("77728761843143033072264230","7586753647"));
         System.out.println("\n");
         // should return 77728761843143040659017877
-        // returns 85315515490143033072264230
-        
+        // returns 7772876184443040659017877
+        */
+        System.out.println(add("861462568458634801","71013478150687340848720563"));
+        System.out.println("\n");
+        // should return 71013479012149909307355364
+        //                      **
+        // returns       71013478150862149909307355364
+        //                      ******
       }
 }
